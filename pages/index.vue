@@ -84,7 +84,7 @@
             ></v-file-input>
             <p>C'est tout :)</p>
             <v-btn
-              :disabled="!experience || !cv"
+              :disabled="!experience"
               color="primary"
               depressed
               @click="expansion = 2"
