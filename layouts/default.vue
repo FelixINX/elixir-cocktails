@@ -99,12 +99,18 @@
         >ÉLIXIR<br />COCKTAILS</v-toolbar-title
       >
       <v-spacer></v-spacer>
-      <v-btn text color="primary">Qui sommes-nous</v-btn>
-      <v-btn class="ml-2" text color="primary">Contactez-nous</v-btn>
-      <v-btn class="ml-2" color="secondaryCon" depressed
+      <v-btn text class="d-none d-md-block" color="primary"
+        >Qui sommes-nous</v-btn
+      >
+      <v-btn class="d-none d-md-block ml-2" text color="primary"
+        >Contactez-nous</v-btn
+      >
+      <v-btn class="d-none d-md-block ml-2" color="secondaryCon" depressed
         >Réserver un atelier</v-btn
       >
-      <v-btn class="ml-2" color="primary" depressed>Commander un boîtier</v-btn>
+      <v-btn class="d-none d-md-block ml-2" color="primary" depressed
+        >Commander un boîtier</v-btn
+      >
     </v-app-bar>
     <v-main>
       <Nuxt />

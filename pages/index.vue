@@ -16,7 +16,7 @@
         <div class="d-flex justify-center">
           <v-img
             src="https://i.imgur.com/o2kYfUA.png"
-            style="max-width: 500px"
+            style="max-width: 90vw"
           />
         </div>
       </div>
