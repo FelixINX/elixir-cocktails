@@ -13,7 +13,12 @@
           entreprise.
         </p>
 
-        <img src="https://i.imgur.com/o2kYfUA.png" class="text-center" />
+        <div class="d-flex justify-center">
+          <v-img
+            src="https://i.imgur.com/o2kYfUA.png"
+            style="max-width: 500px"
+          />
+        </div>
       </div>
       <v-expansion-panels
         v-model="expansion"
@@ -202,13 +207,7 @@
                 </v-col>
               </v-row>
             </v-item-group>
-            <v-btn
-              class="mt-4"
-              :disabled="!would1 || !would2 || !would3 || !drink || !tv"
-              color="primary"
-              depressed
-              @click="done = true"
-            >
+            <v-btn class="mt-4" color="primary" depressed @click="done = true">
               Envoyer
               <v-icon right>mdi-email-fast-outline</v-icon>
             </v-btn>
