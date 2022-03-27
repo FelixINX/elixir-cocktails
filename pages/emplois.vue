@@ -1,28 +1,55 @@
 <template>
   <div>
-    <v-container class="mt-12 px-8">
+    <v-container class="mt-12 px-8 z-20 d-flex flex-column">
       <div class="text-center">
-        <h1 class="text-h3 primaryConOn--text text-center">
+        <h1 class="text-h3 primaryConOn--text text-center font-weight-black">
           Viens travailler avec nous!
         </h1>
 
         <p class="text-h6 mt-2 font-weight-medium">
           Élixir Cocktails est à la recherche d'un.e mixologue et d'un.e
           préposé.e pour commencer nos opérations! Rejoins une entreprise en
-          plein croissance et aie la chance de devenir la saveur de notre
+          pleine croissance et aie la chance de devenir la saveur de notre
           entreprise.
         </p>
+
+        <div class="text-left font-weight-medium">
+          <h2 class="text-subtitle-1 font-weight-bold">Nos avantages</h2>
+          <p>
+            Nous offrons à tous nos employés un environnement de travail de
+            qualité et plusieurs avantages sociaux :
+          </p>
+          <ul>
+            <li>
+              Des semaines de travail de 32 heures pour faciliter la
+              conciliation travail-vie personnelle
+            </li>
+            <li>Un régime d'assurances bonifié</li>
+            <li>Un régime de retraite où nous contribuons 4% de ton salaire</li>
+            <li>
+              Un budget de formation annuel pour développer tes compétences
+            </li>
+            <li>
+              La chance de rejoindre la tradition Élixir : chaque premier
+              mercredi du mois, joins-toi à notre équipe pour une sortie ludique
+            </li>
+          </ul>
+        </div>
 
         <div class="d-flex justify-center">
           <v-img
             src="https://i.imgur.com/o2kYfUA.png"
-            style="max-width: 90vw"
+            max-width="min(90vw, 500px)"
           />
         </div>
       </div>
+      <v-card color="primary" class="mb-4 z-20" dark elevation="0">
+        <v-card-title> Applique dès maintenant! </v-card-title>
+      </v-card>
       <v-expansion-panels
         v-model="expansion"
         readonly
+        accordion
         class="font-weight-medium"
       >
         <v-expansion-panel>
@@ -239,11 +266,37 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+    <div class="blob">
+      <svg
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+        class="blob-1"
+      >
+        <path
+          fill="#d6e662"
+          d="M33.6,-21.5C45.5,1.2,58.5,21.2,53,34.5C47.6,47.7,23.8,54.2,1.8,53.2C-20.3,52.1,-40.6,43.6,-54,25.7C-67.5,7.9,-74.2,-19.4,-64,-41.1C-53.9,-62.7,-26.9,-78.8,-8,-74.1C10.9,-69.5,21.7,-44.2,33.6,-21.5Z"
+          transform="translate(100 100)"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="blob-2"
+        viewBox="0 0 526 466"
+      >
+        <path
+          d="M0,0l525.75,0c-8.285,118.312 -95.659,92.69 -148.385,126.601c-53.479,33.911 -24.856,115.297 -92.647,168.048c-67.036,53.504 -115.243,39.186 -154.41,53.504c-39.168,14.318 -46.7,67.822 -72.31,94.95c-21.843,22.608 -57.998,22.608 -57.998,22.608l0,-465.711l-0,0Z"
+          style="fill: #f89fa5; fill-rule: nonzero"
+        />
+      </svg>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  head: {
+    title: 'Emplois chez Élixir Cocktails',
+  },
   data: () => ({
     drinks: [
       {
@@ -351,3 +404,37 @@ export default {
   }),
 };
 </script>
+
+<style>
+.z-20 * {
+  z-index: 2;
+}
+
+.blob {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.blob svg {
+  position: absolute;
+}
+
+.blob-1 {
+  bottom: -20rem;
+  right: -20rem;
+  width: 50rem;
+}
+
+.blob-2 {
+  top: 0rem;
+  left: 0rem;
+  width: 25rem;
+  max-width: 50vw;
+  opacity: 100%;
+}
+</style>
