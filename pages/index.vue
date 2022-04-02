@@ -24,117 +24,122 @@
         />
       </svg>
     </div>
-    <!--
     <div class="ml-16 flex-grow-1 d-flex flex-column ec-cards">
-      <v-img
-        class="flex-grow-1"
-        src="https://source.unsplash.com/BmrYN5A1-PQ"
-        width="100px"
-      ></v-img>
       <div class="primary flex-grow-1"></div>
       <div class="secondary flex-grow-1"></div>
       <div class="accent flex-grow-1"></div>
-    </div>-->
-    <div class="ml-16 ec-blobs flex-grow-1 d-none d-lg-block">
-      <div class="ec-blob ec-blob-1">
-        <svg
-          viewBox="0 0 20 18"
-          xmlns="http://www.w3.org/2000/svg"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          stroke-linejoin="round"
-        >
-          <clipPath id="mask-1">
-            <path
-              d="M15.798,0.178c2.095,0.627 3.685,3.015 3.574,5.253c-0.11,2.239 -1.909,4.312 -3.133,6.029c-1.206,1.728 -1.819,3.111 -2.94,4.113c-1.121,1.001 -2.733,1.632 -4.511,1.677c-1.781,0.031 -3.725,-0.51 -5.491,-1.753c-1.765,-1.243 -3.354,-3.202 -3.295,-5.12c0.044,-1.915 1.737,-3.788 3.408,-5.199c1.671,-1.412 3.332,-2.378 5.476,-3.429c2.159,-1.055 4.802,-2.196 6.912,-1.571Z"
-            ></path>
-          </clipPath>
-          <image
-            width="100%"
-            height="100%"
-            clip-path="url(#mask-1)"
-            preserveAspectRatio="xMidYMid slice"
-            href="https://source.unsplash.com/BmrYN5A1-PQ"
-          />
-          1
-          <rect
-            width="100%"
-            height="100%"
-            class="primary--text"
-            fill="currentColor"
-            clip-path="url(#mask-1)"
-          />
-        </svg>
-        <v-btn color="primary" depressed left x-large>
-          Découvrez nos<br />ateliers à domicile
-          <v-icon right>mdi-arrow-right</v-icon>
-        </v-btn>
-      </div>
-      <div class="ec-blob ec-blob-2">
-        <svg
-          viewBox="0 0 20 18"
-          xmlns="http://www.w3.org/2000/svg"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          stroke-linejoin="round"
-        >
-          <clipPath id="mask-2">
-            <path
-              d="M13.546,3.835c1.589,2.117 2.567,4.598 2.137,6.876c-0.44,2.277 -2.266,4.339 -4.587,5.489c-2.309,1.149 -5.113,1.386 -7.208,0.311c-2.095,-1.074 -3.48,-3.448 -3.813,-5.8c-0.323,-2.353 0.419,-4.684 1.837,-6.757c1.418,-2.084 3.534,-3.911 5.682,-3.954c2.159,-0.032 4.362,1.719 5.952,3.835Z"
-            ></path>
-          </clipPath>
-          <image
-            width="100%"
-            height="100%"
-            clip-path="url(#mask-2)"
-            preserveAspectRatio="xMidYMid slice"
-            href="https://source.unsplash.com/XoN3v3Ge7EE"
-          />
-          <rect
-            width="100%"
-            height="100%"
-            class="secondary--text"
-            fill="currentColor"
-            clip-path="url(#mask-2)"
-          />
-        </svg>
-        <v-btn to="/boitiers" nuxt color="secondary" depressed left x-large>
-          Commandez l'un<br />de nos boîtiers
-          <v-icon right>mdi-arrow-right</v-icon>
-        </v-btn>
-      </div>
-      <div class="ec-blob ec-blob-3">
-        <svg
-          viewBox="0 0 20 18"
-          xmlns="http://www.w3.org/2000/svg"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          stroke-linejoin="round"
-        >
-          <clipPath id="mask-3">
-            <path
-              d="M13.857,0.917c1.473,0.937 2.41,2.729 2.719,4.521c0.309,1.802 -0.01,3.605 -0.618,5.273c-0.597,1.679 -1.473,3.213 -2.781,4.439c-1.308,1.215 -3.048,2.111 -4.737,2.049c-1.689,-0.062 -3.337,-1.081 -4.851,-2.235c-1.513,-1.143 -2.904,-2.43 -3.388,-3.975c-0.474,-1.555 -0.041,-3.388 0.577,-5.129c0.618,-1.73 1.411,-3.367 2.708,-4.356c1.308,-0.989 3.111,-1.329 5.006,-1.452c1.905,-0.134 3.903,-0.062 5.365,0.865Z"
-            ></path>
-          </clipPath>
-          <image
-            width="100%"
-            height="100%"
-            clip-path="url(#mask-3)"
-            preserveAspectRatio="xMidYMid slice"
-            href="https://source.unsplash.com/7EbGkOm8pWM"
-          />
-          <rect
-            width="100%"
-            height="100%"
-            class="accent--text"
-            fill="currentColor"
-            clip-path="url(#mask-3)"
-          />
-        </svg>
-        <v-btn color="accent" depressed large>
-          Ajoutez du piquant<br />à vos party
-          <v-icon right>mdi-arrow-right</v-icon>
-        </v-btn>
+    </div>
+    <div
+      class="
+        ml-16
+        ec-blobs
+        flex-grow-1
+        d-none d-lg-flex
+        justify-center
+        align-center
+      "
+    >
+      <div class="ec-blob-center">
+        <div class="ec-blob ec-blob-1">
+          <svg
+            viewBox="0 0 20 18"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke-linejoin="round"
+          >
+            <clipPath id="mask-1">
+              <path
+                d="M15.798,0.178c2.095,0.627 3.685,3.015 3.574,5.253c-0.11,2.239 -1.909,4.312 -3.133,6.029c-1.206,1.728 -1.819,3.111 -2.94,4.113c-1.121,1.001 -2.733,1.632 -4.511,1.677c-1.781,0.031 -3.725,-0.51 -5.491,-1.753c-1.765,-1.243 -3.354,-3.202 -3.295,-5.12c0.044,-1.915 1.737,-3.788 3.408,-5.199c1.671,-1.412 3.332,-2.378 5.476,-3.429c2.159,-1.055 4.802,-2.196 6.912,-1.571Z"
+              ></path>
+            </clipPath>
+            <image
+              width="100%"
+              height="100%"
+              clip-path="url(#mask-1)"
+              preserveAspectRatio="xMidYMid slice"
+              href="https://source.unsplash.com/BmrYN5A1-PQ"
+            />
+            1
+            <rect
+              width="100%"
+              height="100%"
+              class="primary--text"
+              fill="currentColor"
+              clip-path="url(#mask-1)"
+            />
+          </svg>
+          <v-btn color="primary" depressed left x-large>
+            Découvrez nos<br />ateliers à domicile
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </div>
+        <div class="ec-blob ec-blob-2">
+          <svg
+            viewBox="0 0 20 18"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke-linejoin="round"
+          >
+            <clipPath id="mask-2">
+              <path
+                d="M13.546,3.835c1.589,2.117 2.567,4.598 2.137,6.876c-0.44,2.277 -2.266,4.339 -4.587,5.489c-2.309,1.149 -5.113,1.386 -7.208,0.311c-2.095,-1.074 -3.48,-3.448 -3.813,-5.8c-0.323,-2.353 0.419,-4.684 1.837,-6.757c1.418,-2.084 3.534,-3.911 5.682,-3.954c2.159,-0.032 4.362,1.719 5.952,3.835Z"
+              ></path>
+            </clipPath>
+            <image
+              width="100%"
+              height="100%"
+              clip-path="url(#mask-2)"
+              preserveAspectRatio="xMidYMid slice"
+              href="https://source.unsplash.com/XoN3v3Ge7EE"
+            />
+            <rect
+              width="100%"
+              height="100%"
+              class="secondary--text"
+              fill="currentColor"
+              clip-path="url(#mask-2)"
+            />
+          </svg>
+          <v-btn to="/boitiers" nuxt color="secondary" depressed left x-large>
+            Commandez l'un<br />de nos boîtiers
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </div>
+        <div class="ec-blob ec-blob-3">
+          <svg
+            viewBox="0 0 20 18"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke-linejoin="round"
+          >
+            <clipPath id="mask-3">
+              <path
+                d="M13.857,0.917c1.473,0.937 2.41,2.729 2.719,4.521c0.309,1.802 -0.01,3.605 -0.618,5.273c-0.597,1.679 -1.473,3.213 -2.781,4.439c-1.308,1.215 -3.048,2.111 -4.737,2.049c-1.689,-0.062 -3.337,-1.081 -4.851,-2.235c-1.513,-1.143 -2.904,-2.43 -3.388,-3.975c-0.474,-1.555 -0.041,-3.388 0.577,-5.129c0.618,-1.73 1.411,-3.367 2.708,-4.356c1.308,-0.989 3.111,-1.329 5.006,-1.452c1.905,-0.134 3.903,-0.062 5.365,0.865Z"
+              ></path>
+            </clipPath>
+            <image
+              width="100%"
+              height="100%"
+              clip-path="url(#mask-3)"
+              preserveAspectRatio="xMidYMid slice"
+              href="https://source.unsplash.com/7EbGkOm8pWM"
+            />
+            <rect
+              width="100%"
+              height="100%"
+              class="accent--text"
+              fill="currentColor"
+              clip-path="url(#mask-3)"
+            />
+          </svg>
+          <v-btn color="accent" depressed large>
+            Ajoutez du piquant<br />à vos party
+            <v-icon right>mdi-arrow-right</v-icon>
+          </v-btn>
+        </div>
       </div>
     </div>
   </v-container>
@@ -157,9 +162,8 @@ export default {};
 }
 
 .ec-blobs {
-  max-width: 1000px;
-  position: relative;
   height: 100%;
+  min-width: 600px;
 }
 
 .ec-cards {
@@ -167,6 +171,12 @@ export default {};
 }
 
 .ec-blob {
+  &-center {
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+
   .v-btn {
     text-align: left;
     position: absolute;
@@ -184,8 +194,8 @@ export default {};
 
   position: absolute;
   &-1 {
-    top: 10%;
-    left: 5%;
+    top: -400px;
+    left: -275px;
     animation: fade-in-top 1s ease-out;
 
     .v-btn {
@@ -193,36 +203,33 @@ export default {};
     }
 
     svg {
-      width: 30rem;
-      max-width: 50vw;
+      width: 400px;
     }
   }
   &-2 {
-    top: 25%;
-    right: 5%;
-    animation: fade-in-top 1s ease-out 0.5s both;
+    bottom: -300px;
+    right: -125px;
+    animation: fade-in-top 1s ease-out 1s both;
 
     .v-btn {
       right: 25%;
     }
 
     svg {
-      width: 28rem;
-      max-width: 50vw;
+      width: 350px;
     }
   }
   &-3 {
-    bottom: 20%;
-    left: 20%;
-    animation: fade-in-top 1s ease-out 1s both;
+    bottom: -75px;
+    right: -325px;
+    animation: fade-in-top 1s ease-out 0.5s both;
 
     .v-btn {
       left: 50%;
       transform: translate(-60%);
     }
     svg {
-      width: 20rem;
-      max-width: 40vw;
+      width: 300px;
     }
   }
 }

@@ -1,8 +1,8 @@
 <template>
-  <v-container class="mt-12 px-8">
-    <div class="d-flex justify-space-around ec-box fade-in-top">
-      <div class="text-center ec-box-choice">
-        <p class="text-h4 font-weight-bold mb-0">Boîtes mensuelles</p>
+  <v-container class="py-12 px-8 ec-box-con">
+    <div class="ec-box">
+      <div class="text-center ec-box-choice fade-in-top">
+        <p class="text-h4 font-weight-bold mb-0">Boîtiers mensuelles</p>
         <p class="text-subtitle-1 mt-2">
           À chaque mois, recevez une boîte surprise conçu par notre équipe
         </p>
@@ -20,7 +20,7 @@
               <v-icon>mdi-currency-usd</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title> À partir de 60$ </v-list-item-title>
+              <v-list-item-title> À partir de 70$ </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -28,8 +28,8 @@
           >Commandez votre boîtier <v-icon right>mdi-arrow-right</v-icon></v-btn
         >
       </div>
-      <div class="text-center ec-box-choice fade-in-top-delay">
-        <p class="text-h4 font-weight-bold mb-0">Boîtes personnalisés</p>
+      <div class="text-center ec-box-choice fade-in-top">
+        <p class="text-h4 font-weight-bold mb-0">Boîtiers personnalisés</p>
         <p class="text-subtitle-1 mt-2">
           Nos mixologues préparont une boîte spécialement pour vous, selon vos
           goûts
@@ -59,6 +59,29 @@
           <v-icon right>mdi-arrow-right</v-icon></v-btn
         >
       </div>
+      <div
+        class="
+          ec-box-starter
+          d-flex
+          flex-no-wrap
+          align-center
+          fade-in-top-delay
+        "
+      >
+        <v-avatar size="100" class="mr-8">
+          <v-img src="https://source.unsplash.com/EsVRjPacg98"></v-img>
+        </v-avatar>
+        <div class="mx-4">
+          <h2 class="text-subtitle-2">Ajoutez le kit de départ pour 50$</h2>
+          <h2 class="text-body-2">
+            Tout ce qu'il vous faut pour devenir un alchimiste
+          </h2>
+        </div>
+        <v-btn depressed color="accent" class="px-4">
+          Acheter
+          <v-icon right>mdi-arrow-right</v-icon>
+        </v-btn>
+      </div>
     </div>
   </v-container>
 </template>
@@ -75,8 +98,31 @@ export default {
 <style lang="scss">
 .ec-box {
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  justify-items: center;
+  align-content: center;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  @media (min-width: 1264px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    &-choice {
+      max-width: 25vw;
+    }
+  }
+
+  &-con {
+    height: calc(100vh - 100px);
+  }
+
   &-choice {
-    max-width: 25vw;
+    max-width: 50rem;
+  }
+
+  &-starter {
+    grid-column: 1 / -1;
   }
 }
 
