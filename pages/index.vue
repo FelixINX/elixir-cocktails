@@ -9,7 +9,16 @@
       align-center
     "
   >
-    <div class="ec-art mt-12 mt-md-0 mb-16 mb-md-0 d-flex justify-space-around">
+    <div
+      class="
+        ec-art
+        mt-12 mt-md-0
+        mb-16 mb-md-0
+        d-flex
+        justify-space-around
+        align-center
+      "
+    >
       <svg
         class="primaryConOn--text"
         viewBox="0 0 462 402"
@@ -24,17 +33,12 @@
         />
       </svg>
     </div>
-    <div class="ml-16 flex-grow-1 d-flex flex-column ec-cards">
-      <div class="primary flex-grow-1"></div>
-      <div class="secondary flex-grow-1"></div>
-      <div class="accent flex-grow-1"></div>
-    </div>
     <div
       class="
         ml-16
         ec-blobs
         flex-grow-1
-        d-none d-lg-flex
+        d-none d-md-flex
         justify-center
         align-center
       "
@@ -158,12 +162,13 @@ export default {};
 }
 
 .ec-container {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 .ec-blobs {
   height: 100%;
   min-width: 600px;
+  min-height: 850px;
 }
 
 .ec-cards {
