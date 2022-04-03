@@ -106,7 +106,7 @@
 <script>
 export default {
   head: {
-    title: 'Boîtiers - Élixir Cocktails',
+    title: 'Boîtiers personnalisés - Élixir Cocktails',
   },
   data: () => ({
     step1: [],

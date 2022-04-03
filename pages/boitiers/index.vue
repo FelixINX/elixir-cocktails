@@ -2,9 +2,15 @@
   <v-container class="py-12 px-8 ec-box-con">
     <div class="ec-box">
       <div class="text-center ec-box-choice fade-in-top">
-        <p class="text-h4 font-weight-bold mb-0">Boîtiers mensuelles</p>
+        <v-img
+          width="200px"
+          src="/svg/boitiers-mensuels.svg"
+          class="mx-auto mb-6"
+        ></v-img>
+        <p class="text-h4 font-weight-bold mb-0">Boîtiers mensuels</p>
         <p class="text-subtitle-1 mt-2">
-          À chaque mois, recevez une boîte surprise conçu par notre équipe
+          Chaque mois, recevez une boîte surprise conçue par notre équipe,
+          parfaite pour découvrir de nouvelles saveurs tous les mois
         </p>
         <v-list color="primaryCon" dense class="text-left">
           <v-list-item>
@@ -29,10 +35,15 @@
         >
       </div>
       <div class="text-center ec-box-choice fade-in-top">
+        <v-img
+          width="200px"
+          src="/svg/boitiers-personnalises.svg"
+          class="mx-auto mb-6"
+        ></v-img>
         <p class="text-h4 font-weight-bold mb-0">Boîtiers personnalisés</p>
         <p class="text-subtitle-1 mt-2">
-          Nos mixologues préparont une boîte spécialement pour vous, selon vos
-          goûts
+          Laissez nos mixologues préparer une boîte spécialement pour vous,
+          selon vos goûts
         </p>
         <v-list color="primaryCon" dense class="text-left">
           <v-list-item>

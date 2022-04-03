@@ -150,7 +150,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: "Élixir Cocktails - l'art du cocktail à domicile",
+  },
+};
 </script>
 
 <style lang="scss">
