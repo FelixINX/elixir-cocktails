@@ -27,7 +27,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/google-fonts'],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/google-fonts', '@nuxtjs/pwa'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
@@ -48,6 +48,12 @@ export default {
     families: {
       'Abhaya Libre': [400, 500, 700],
       Lora: [400, 500, 700],
+    },
+  },
+
+  pwa: {
+    icon: {
+      source: '[srcDir]/[staticDir]/svg/icone.svg',
     },
   },
 };

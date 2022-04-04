@@ -12,7 +12,7 @@
           <v-chip filter label outlined>Tequila</v-chip>
           <v-chip filter label outlined>Rhum</v-chip>
           <v-chip filter label outlined>Whisky</v-chip>
-          <v-chip filter label outlined>Liqueur</v-chip>
+          <v-chip filter label outlined close-icon="mdi-menu-down" close>Liqueur</v-chip>
         </v-chip-group>
       </div>
       <div class="mt-4 slide-in-top" v-show="step1.length">
@@ -23,11 +23,10 @@
           <v-chip filter label outlined>Salé</v-chip>
           <v-chip filter label outlined>Fruité</v-chip>
           <v-chip filter label outlined>Amer</v-chip>
-          <v-chip filter label outlined>Liqueur</v-chip>
         </v-chip-group>
       </div>
       <div class="mt-4 slide-in-top" v-show="step2.length">
-        <h2 class="text-subtitle-2">Étape 3 : Quel est votre niveau?</h2>
+        <h2 class="text-subtitle-2">Étape 3 : Quel est votre niveau d'expertise?</h2>
         <v-chip-group v-model="step3" color="secondary">
           <v-chip value="low" filter label outlined
             >Je n'ai jamais fait de cocktail</v-chip
