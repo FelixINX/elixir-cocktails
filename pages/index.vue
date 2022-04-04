@@ -140,7 +140,7 @@
             />
           </svg>
           <v-btn color="accent" depressed large>
-            Ajoutez du piquant<br />à vos party
+            Réserver un atelier<br />de teambuilding
             <v-icon right>mdi-arrow-right</v-icon>
           </v-btn>
         </div>
