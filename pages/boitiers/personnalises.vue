@@ -74,7 +74,7 @@
         <v-card-actions>
           <v-btn depressed color="primary" class="px-4" @click="dialog = true"> 
             <v-icon left>mdi-cart-outline</v-icon>
-            Passer à la ciasse
+            Passer à la caisse
           </v-btn>
         </v-card-actions>
       </v-card>
